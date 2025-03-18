@@ -1,0 +1,7 @@
+git clone https://github.com/kloudvsol/website
+cd website
+docker rm -f c1 ;
+ls -lart  website
+docker build -t myapache .
+docker image ls ;
+docker run -itd --name c1 -p 80:80 myapache
